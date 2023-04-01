@@ -38,6 +38,7 @@ goto :show_stdout_stderr
 
 :activate_venv
 set PYTHON="%VENV_DIR%\Scripts\Python.exe"
+set COMMANDLINE_ARGS=--skip-torch-cuda-test --no-half --no-half-vae
 echo venv %PYTHON%
 
 :skip_venv
